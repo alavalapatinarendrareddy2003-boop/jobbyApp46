@@ -1,0 +1,121 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+  background-size: cover;
+  padding: 20px;
+}
+
+.login-website-logo-mobile-image {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.login-website-logo-desktop-image {
+  display: none;
+}
+
+.login-img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  background-color: #272727;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input-label {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.username-input-field,
+.password-input-field {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #64748b;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+
+.login-button {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #4f46e5;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.error-message {
+  align-self: start;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff0b37;
+}
+
+@media screen and (min-width: 768px) {
+  .login-form-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .login-website-logo-mobile-image {
+    display: none;
+  }
+
+  .login-website-logo-desktop-image {
+    width: 150px;
+    display: block;
+  }
+
+  .form-container {
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    width: 350px;
+    flex-shrink: 0;
+  }
+}
+.login-website-logo {
+  width: 120px; /* Adjust size accordingly */
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-website-logo {
+    width: 160px; /* Scales up nicely on desktop */
+  }
+}
